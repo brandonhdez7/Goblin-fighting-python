@@ -120,7 +120,8 @@ while game_on:
         arrow.update_me()
         pygame_screen.blit(arrow_image,[arrow.x,arrow.y])
 
-    arrow_hit = groupcollide(arrows,bad_guys,True,True)    
+    arrow_hit = groupcollide(arrows,bad_guys,True,True)
+    theHero = groupcollide(theHero,bad_guys,True,True)  
 
     for bad_guy in bad_guys:
         bad_guy.update_me(theHero)
